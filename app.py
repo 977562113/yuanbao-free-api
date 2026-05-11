@@ -1,6 +1,8 @@
 """YuanBao API Proxy 主应用"""
 
+import asyncio
 import logging
+import sys
 from contextlib import asynccontextmanager
 
 from fastapi import FastAPI
@@ -19,6 +21,10 @@ logger = logging.getLogger(__name__)
 @asynccontextmanager
 async def lifespan(_: FastAPI):
     """应用生命周期事件处理器"""
+    # 确保在 Windows 上使用正确的事件循环策略
+    if sys.platform.startswith("win"):
+        asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+    
     logger.info("[Startup] 正在初始化浏览器...")
     try:
         await browser_manager.login()
