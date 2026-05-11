@@ -50,9 +50,11 @@ cp .env.example .env
 
 ```bash
 # 启动服务（首次启动会自动打开浏览器进行扫码登录）
-python app.py
+python start.py
 
 # 服务地址：http://localhost:8000
+
+python test2.py
 ```
 
 ### Docker 部署
