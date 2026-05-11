@@ -8,7 +8,7 @@ from openai import OpenAI
 base_url = "http://localhost:8000/v1/"
 
 # 配置 API Key（需要在 .env 中配置）
-api_key = "sk-test-api-key"
+api_key = "sk-your-api-key-here"
 
 chat_id = ""  # 可选，如果不提供会自动创建
 
