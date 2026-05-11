@@ -70,9 +70,26 @@ class BrowserManager:
         await self.ensure_browser()
 
         try:
+            # 先等待页面完全加载
+            await self.page.wait_for_timeout(2000)
+            
+            # 尝试关闭可能存在的弹窗/对话框
+            try:
+                close_buttons = self.page.locator(".t-dialog__close, .t-icon-close, [class*='close']")
+                if await close_buttons.count() > 0:
+                    await close_buttons.first.click(timeout=3000)
+                    logger.info("[Browser] 已关闭弹窗")
+                    await self.page.wait_for_timeout(500)
+            except Exception:
+                pass  # 没有弹窗则忽略
+            
+            # 查找并点击登录按钮
             login_button = self.page.get_by_role("img").first
-            await login_button.wait_for(state="visible")
-            await login_button.click()
+            await login_button.wait_for(state="visible", timeout=10000)
+            
+            # 使用 force=True 强制点击，忽略遮挡
+            await login_button.click(force=True, timeout=10000)
+            logger.info("[Browser] 已点击登录按钮")
 
             iframe_frame = self.page.frame_locator("iframe")
             qrcode_locator = iframe_frame.get_by_role("img")
