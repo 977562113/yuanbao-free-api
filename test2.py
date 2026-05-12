@@ -8,7 +8,7 @@ API_KEY = "sk-your-api-key-here"  # 使用 .env 中配置的 API Key
 # 请求数据
 data = {
     "messages": [
-        {"role": "", "content": "今天日期是？今天A股涨幅最大行业板块有哪些？"}
+        {"role": "", "content": "今天A股跌幅最大行业板块有哪些？"}
         # {"content": "今天A股涨幅最大的行业板块是？"}
     ],
     "model": "deepseek-v3-search",
@@ -38,6 +38,7 @@ for line in response.iter_lines():
                 chunk = json.loads(data_str)
                 content = chunk.get('choices', [{}])[0].get('delta', {}).get('content', '')
                 if content:
+                    print("\n")
                     print(content, end='', flush=True)
             except json.JSONDecodeError as e:
                 print(f"\n解析错误: {e}")

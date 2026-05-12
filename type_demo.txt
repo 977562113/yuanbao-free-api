@@ -1,0 +1,2744 @@
+
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text"
+}
+
+-----------------------------------------------------------------
+
+消息类型: step
+完整 JSON 对象: {
+  "type": "step",
+  "msg": "正在搜索资料",
+  },
+  "enableFeatures": [
+    "loadingV2"
+  ],
+  "aiVideoStepInfo": {}
+}
+
+-----------------------------------------------------------------
+
+消息类型: step
+完整 JSON 对象: {
+  "type": "step",
+  "msg": "正在搜索资料",
+  "subMsg": "",
+  "stage": "",
+  "enableStageLayer": false,
+  "showLoadingIcon": false,
+  "stepVersion": 0,
+  "scene": "ai_search_deepseek_v3",
+  "index": 1,
+  "iconList": [
+    "https://cdn-yb.icon.qq.com/zuowei_dir/finance_sina_com_cn.ico",
+    "https://hy-openapi-pulbic.hunyuan.tencent.com/app/icon/search_guide/icon_gzh_260324.png",
+    "https://cdn-yb.icon.qq.com/zuowei_dir/stcn_com.ico",
+    "https://cdn-yb.icon.qq.com/zuowei_dir/fund_eastmoney_com.ico",
+    "https://cdn-yb.icon.qq.com/zuowei_dir/www_stcn_com.ico",
+    "https://cdn-yb.icon.qq.com/zuowei_dir/stcn_com.ico",
+    "https://cdn-yb.icon.qq.com/zuowei_dir/news_10jqka_com_cn.ico",
+    "https://cdn-yb.icon.qq.com/zuowei_dir/new_qq_com.ico",
+    "https://cdn-yb.icon.qq.com/zuowei_dir/www_stcn_com.ico",
+    "https://cdn-yb.icon.qq.com/zuowei_dir/www_stcn_com.ico",
+    "https://cdn-yb.icon.qq.com/zuowei_dir/gu_qq_com.ico",
+    "https://cdn-yb.icon.qq.com/zuowei_dir/www_stcn_com.ico"
+  ],
+  "iconType": 4,
+  "writeExtend": {
+    "fileName": "",
+    "docEditable": false,
+    "fileType": "",
+    "outline": "",
+    "templateId": ""
+  },
+  "enableFeatures": [
+    "loadingV2"
+  ],
+  "aiVideoStepInfo": {}
+}
+
+-----------------------------------------------------------------
+
+消息类型: searchGuid
+完整 JSON 对象: {
+  "type": "searchGuid",
+  "title": "引用 13 篇资料作为参考",
+  "subTitle": "",
+  "footnote": "",
+  "prompt": "",
+  "botPrompt": "",
+  "entranceIndex": 0,
+  "messageId": "",
+  "sourceType": "",
+  "docs": [
+    {
+      "index": 1,
+      "docId": "plugin_0",
+      "title": "上证指数:basic_info",
+      "url": "",
+      "sourceType": "plugin",
+      "quote": "basic_info 行情数据 市场:A股; 指数名称:上证指数;指数代码:000001.SH; 从2026-04-01到2026-04-30的历史行情数据(前复权数据计算) 从2026-04-0
+1到2026-04-30区间涨跌幅为5.66%,区间振幅为6.36%,区间成交量为1,207,421,462,700,区间成交额为21,257,845,145,467.00,最高点为2026-04-30的4,118.76点,最低点为
+2026-04-03的3,871.30点,起始点为2026-04-01的上一个交易日(2026-03-31)收盘价3891.86点, 终止点为2026-04-30的收盘",
+      "publish_time": "2026年05月12日",
+      "icon_url": "https://hy-openapi-pulbic.hunyuan.tencent.com/app/icon/search_guide/icon_plugin_v2.png",
+      "web_site_name": "金融数据库",
+      "isDisable": 1,
+      "disableToast": "插件信息暂不支持访问",
+      "plugin_id": "90012800",
+      "citation_display_icon": "https://hy-openapi-pulbic.hunyuan.tencent.com/app/icon/search_guide/icon_link_260324.png",
+      "citation_display_icon_dark": "https://hy-openapi-pulbic.hunyuan.tencent.com/app/icon/search_guide/icon_link_dark260324.png",
+      "webSiteSource": "金融数据库",
+      "invisibleExt": {},
+      "resource_type": "",
+      "sub_resource_type": ""
+    },
+    {
+      "index": 2,
+      "docId": "meta_864ef96883391e68ad723adcce155c46",
+      "title": "4月A股三大指数普涨 创业板指成最大亮点",
+      "url": "https://finance.sina.com.cn/jjxw/2026-04-30/doc-inhwhraa6179048.shtml",
+      "sourceType": "thirdparty",
+      "quote": "Wind数据显示,在申万一级行业中,电子板块获资金净流入居前,4月净流入资金为685.25亿元;而医...",
+      "publish_time": "2026年04月30日",
+      "icon_url": "https://cdn-yb.icon.qq.com/zuowei_dir/finance_sina_com_cn.ico",
+      "web_site_name": "新浪财经",
+      "web_url": "https://finance.sina.com.cn/jjxw/2026-04-30/doc-inhwhraa6179048.shtml",
+      "citation_display_icon": "https://hy-openapi-pulbic.hunyuan.tencent.com/app/icon/search_guide/icon_link_260324.png",
+      "citation_display_icon_dark": "https://hy-openapi-pulbic.hunyuan.tencent.com/app/icon/search_guide/icon_link_dark260324.png",
+      "webSiteSource": "新浪财经",
+      "invisibleExt": {},
+      "resource_type": "",
+      "sub_resource_type": ""
+    },
+    {
+      "index": 3,
+      "docId": "9981438340408535137",
+      "title": "悦享 · 市场 | 市场环境跟踪4月报",
+      "url": "http://mp.weixin.qq.com/s?__biz=MzIwMjUxODc1Mw==&mid=2247494294&idx=2&sn=061654e2238181afcdfc366f17ad558b&chksm=978603130043a60a3c9a0998
+58afa5ee1312dee4818617dbdd0aa3c99d47090d4c5c74a3704f#rd",
+      "sourceType": "mp",
+      "sourceName": "公众号",
+      "quote": "科创50涨幅居前,为+25.05%;上证50涨幅相对较小,为+5.54%｡行业涨多跌少,电子､通信和...",
+      "publish_time": "2026年05月08日",
+      "icon_url": "https://hy-openapi-pulbic.hunyuan.tencent.com/app/icon/search_guide/icon_gzh_260324.png",
+      "web_site_name": "申万宏源托管与运营服务",
+      "web_url": "http://mp.weixin.qq.com/s?__biz=MzIwMjUxODc1Mw==&mid=2247494294&idx=2&sn=061654e2238181afcdfc366f17ad558b&chksm=978603130043a60a3c9a
+099858afa5ee1312dee4818617dbdd0aa3c99d47090d4c5c74a3704f#rd",
+      "citation_display_icon": "https://hy-openapi-pulbic.hunyuan.tencent.com/app/icon/search_guide/icon_link_260324.png",
+      "citation_display_icon_dark": "https://hy-openapi-pulbic.hunyuan.tencent.com/app/icon/search_guide/icon_link_dark260324.png",
+      "webSiteSource": "申万宏源托管与运营服务",
+      "invisibleExt": {},
+      "resource_type": "",
+      "sub_resource_type": ""
+    },
+    {
+      "index": 4,
+      "docId": "80000346_b31b1b720ab0df77021c4b22dda97e9a",
+      "title": "4月牛股出炉,12股股价翻番",
+      "url": "https://lij@stcn.com/article/detail/3892568.html",
+      "sourceType": "thirdparty",
+      "quote": "食品饮料则是为数不多录得跌幅的申万行业指数,食品饮料下跌1.12%,银行､交通运输跌幅不足1%｡据数据宝统计,20...",
+      "publish_time": "2026年04月30日",
+      "icon_url": "https://cdn-yb.icon.qq.com/zuowei_dir/stcn_com.ico",
+      "web_site_name": "证券时报网",
+      "web_url": "https://lij@stcn.com/article/detail/3892568.html",
+      "citation_display_icon": "https://hy-openapi-pulbic.hunyuan.tencent.com/app/icon/search_guide/icon_link_260324.png",
+      "citation_display_icon_dark": "https://hy-openapi-pulbic.hunyuan.tencent.com/app/icon/search_guide/icon_link_dark260324.png",
+      "webSiteSource": "证券时报网",
+      "invisibleExt": {},
+      "resource_type": "",
+      "sub_resource_type": ""
+    },
+    {
+      "index": 5,
+      "docId": "80000346_d9d03adb32397d9b44e20335ccd4d7f8",
+      "title": "国信策略:上涨过后 如何客观判断AI的拥挤度?",
+      "url": "https://fund.eastmoney.com/a/202604263719202510.html",
+      "sourceType": "thirdparty",
+      "quote": "电子 (18%)等行业涨幅靠前,而商贸零售(-14%)､非银(-13%)､美护(-8%)跌幅靠前｡",
+      "publish_time": "2026年04月26日",
+      "icon_url": "https://cdn-yb.icon.qq.com/zuowei_dir/fund_eastmoney_com.ico",
+      "web_site_name": "东方财富网",
+      "web_url": "https://fund.eastmoney.com/a/202604263719202510.html",
+      "citation_display_icon": "https://hy-openapi-pulbic.hunyuan.tencent.com/app/icon/search_guide/icon_link_260324.png",
+      "citation_display_icon_dark": "https://hy-openapi-pulbic.hunyuan.tencent.com/app/icon/search_guide/icon_link_dark260324.png",
+      "webSiteSource": "东方财富网",
+      "invisibleExt": {},
+      "resource_type": "",
+      "sub_resource_type": ""
+    },
+    {
+      "index": 6,
+      "docId": "80000346_808c556a627664618a0e87c42ec498cd",
+      "title": "资金流向周报:9个行业资金净流出超百亿元",
+      "url": "https://www.stcn.com/article/detail/3803421.html",
+      "sourceType": "thirdparty",
+      "quote": "涨幅居前的行业为煤炭､电子,涨幅为3.93%､3.11%｡跌幅居前的行业为农林牧渔､综合,跌幅为3.",
+      "publish_time": "2026年04月24日",
+      "icon_url": "https://cdn-yb.icon.qq.com/zuowei_dir/www_stcn_com.ico",
+      "web_site_name": "证券时报网",
+      "web_url": "https://www.stcn.com/article/detail/3803421.html",
+      "citation_display_icon": "https://hy-openapi-pulbic.hunyuan.tencent.com/app/icon/search_guide/icon_link_260324.png",
+      "citation_display_icon_dark": "https://hy-openapi-pulbic.hunyuan.tencent.com/app/icon/search_guide/icon_link_dark260324.png",
+      "webSiteSource": "证券时报网",
+      "invisibleExt": {},
+      "resource_type": "",
+      "sub_resource_type": ""
+    },
+    {
+      "index": 7,
+      "docId": "80000346_d7e147469833f6bc271885553059d9bc",
+      "title": "本周主力资金净流出971.22亿元,通信净流出规模居首",
+      "url": "https://jjb@stcn.com/article/detail/3892228.html",
+      "sourceType": "thirdparty",
+      "quote": "申万所属的一级行业中,本周上涨的有24个,涨幅居前的行业为综合､电子,涨幅为7.80%､4.78%｡",
+      "publish_time": "2026年04月30日",
+      "icon_url": "https://cdn-yb.icon.qq.com/zuowei_dir/stcn_com.ico",
+      "web_site_name": "证券时报网",
+      "web_url": "https://jjb@stcn.com/article/detail/3892228.html",
+      "citation_display_icon": "https://hy-openapi-pulbic.hunyuan.tencent.com/app/icon/search_guide/icon_link_260324.png",
+      "citation_display_icon_dark": "https://hy-openapi-pulbic.hunyuan.tencent.com/app/icon/search_guide/icon_link_dark260324.png",
+      "webSiteSource": "证券时报网",
+      "invisibleExt": {},
+      "resource_type": "",
+      "sub_resource_type": ""
+    },
+    {
+      "index": 8,
+      "docId": "80000346_06217ede3ce53c6e6ff646beed94c3c2",
+      "title": "【东吴非银  行业周报】经营显著分化,看好保险和头部优质券商",
+      "url": "https://news.10jqka.com.cn/field/20260506/676459756.shtml",
+      "sourceType": "thirdparty",
+      "quote": "东吴非银 | 行业周报经营显著分化,看好保险和头部优质券商｡截至2026年4月30日,2026年...",
+      "publish_time": "2026年05月05日",
+      "icon_url": "https://cdn-yb.icon.qq.com/zuowei_dir/news_10jqka_com_cn.ico",
+      "web_site_name": "同花顺",
+      "web_url": "https://news.10jqka.com.cn/field/20260506/676459756.shtml",
+      "citation_display_icon": "https://hy-openapi-pulbic.hunyuan.tencent.com/app/icon/search_guide/icon_link_260324.png",
+      "citation_display_icon_dark": "https://hy-openapi-pulbic.hunyuan.tencent.com/app/icon/search_guide/icon_link_dark260324.png",
+      "webSiteSource": "同花顺",
+      "invisibleExt": {},
+      "resource_type": "",
+      "sub_resource_type": ""
+    },
+    {
+      "index": 9,
+      "docId": "80000346_59fe6cebbf13d8075a912a6edc5bfcf7",
+      "title": "踏空了4月科技行情?5月的主题轮动机会,别再错过了_腾讯新闻",
+      "url": "https://new.qq.com/rain/a/20260506A01ZLH00",
+      "sourceType": "thirdparty",
+      "quote": "创业板指上涨15.45%,深证成指上涨12.09%,中证1000上涨10.00%,万得全A上涨8.6...",
+      "publish_time": "2026年05月06日",
+      "icon_url": "https://cdn-yb.icon.qq.com/zuowei_dir/new_qq_com.ico",
+      "web_site_name": "腾讯网",
+      "web_url": "https://new.qq.com/rain/a/20260506A01ZLH00",
+      "citation_display_icon": "https://hy-openapi-pulbic.hunyuan.tencent.com/app/icon/search_guide/icon_link_260324.png",
+      "citation_display_icon_dark": "https://hy-openapi-pulbic.hunyuan.tencent.com/app/icon/search_guide/icon_link_dark260324.png",
+      "webSiteSource": "腾讯网",
+      "invisibleExt": {},
+      "resource_type": "",
+      "sub_resource_type": ""
+    },
+    {
+      "index": 10,
+      "docId": "80000346_a786fec1a3db3157c9086c38110c1919",
+      "title": "A股缩量下跌,持股还是持币过节?",
+      "url": "https://www.stcn.com/article/detail/3808196.html",
+      "sourceType": "thirdparty",
+      "quote": "传媒板块跌逾2%,国防军工板块也跌近2%,公用事业､综合､建筑装饰､社会服务､农林牧渔､汽车等板块跌幅均超1%｡",
+      "publish_time": "2026年04月24日",
+      "icon_url": "https://cdn-yb.icon.qq.com/zuowei_dir/www_stcn_com.ico",
+      "web_site_name": "证券时报网",
+      "web_url": "https://www.stcn.com/article/detail/3808196.html",
+      "citation_display_icon": "https://hy-openapi-pulbic.hunyuan.tencent.com/app/icon/search_guide/icon_link_260324.png",
+      "citation_display_icon_dark": "https://hy-openapi-pulbic.hunyuan.tencent.com/app/icon/search_guide/icon_link_dark260324.png",
+      "webSiteSource": "证券时报网",
+      "invisibleExt": {},
+      "resource_type": "",
+      "sub_resource_type": ""
+    },
+    {
+      "index": 11,
+      "docId": "80000346_adbad99d1b7f125f07da10d7ac8a73f3",
+      "title": "收评:沪指涨近1%,保险、银行板块拉升,存储芯片概念等强势",
+      "url": "https://www.stcn.com/article/detail/3747404.html",
+      "sourceType": "thirdparty",
+      "quote": "煤炭､钢铁､石油石化等跌幅最大,跌幅分别为1.28%､0.96%､0.87%｡(数据宝)今日各行业表...",
+      "publish_time": "2026年04月14日",
+      "icon_url": "https://cdn-yb.icon.qq.com/zuowei_dir/www_stcn_com.ico",
+      "web_site_name": "证券时报网",
+      "web_url": "https://www.stcn.com/article/detail/3747404.html",
+      "citation_display_icon": "https://hy-openapi-pulbic.hunyuan.tencent.com/app/icon/search_guide/icon_link_260324.png",
+      "citation_display_icon_dark": "https://hy-openapi-pulbic.hunyuan.tencent.com/app/icon/search_guide/icon_link_dark260324.png",
+      "webSiteSource": "证券时报网",
+      "invisibleExt": {},
+      "resource_type": "",
+      "sub_resource_type": ""
+    },
+    {
+      "index": 12,
+      "docId": "80000346_7623d4441660491e4ddf7189f37742b0",
+      "title": "国信证券:上涨过后,如何客观判断AI的拥挤度?",
+      "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20260426091155a478c4f0",
+      "sourceType": "thirdparty",
+      "quote": "电子(18%)等行业涨幅靠前,而 商贸零售 (-14%)､非 银 (-13%)､美护(-8%)跌幅靠...",
+      "publish_time": "2026年04月24日",
+      "icon_url": "https://cdn-yb.icon.qq.com/zuowei_dir/gu_qq_com.ico",
+      "web_site_name": "腾讯证券",
+      "web_url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20260426091155a478c4f0",
+      "citation_display_icon": "https://hy-openapi-pulbic.hunyuan.tencent.com/app/icon/search_guide/icon_link_260324.png",
+      "citation_display_icon_dark": "https://hy-openapi-pulbic.hunyuan.tencent.com/app/icon/search_guide/icon_link_dark260324.png",
+      "webSiteSource": "腾讯证券",
+      "invisibleExt": {},
+      "resource_type": "",
+      "sub_resource_type": ""
+    },
+    {
+      "index": 13,
+      "docId": "80000346_991cce4603ee72dd7d4b4dec5502bd1a",
+      "title": "收评:沪指跌0.32%,有色、半导体等板块下挫,电力板块逆市活跃",
+      "url": "https://www.stcn.com/article/detail/3789698.html",
+      "sourceType": "thirdparty",
+      "quote": "跌幅分别为2.34%､1.16%､1.15%｡(数据宝)今日各行业表现(截至上午10:28)申万行业...",
+      "publish_time": "2026年04月23日",
+      "icon_url": "https://cdn-yb.icon.qq.com/zuowei_dir/www_stcn_com.ico",
+      "web_site_name": "证券时报网",
+      "web_url": "https://www.stcn.com/article/detail/3789698.html",
+      "citation_display_icon": "https://hy-openapi-pulbic.hunyuan.tencent.com/app/icon/search_guide/icon_link_260324.png",
+      "citation_display_icon_dark": "https://hy-openapi-pulbic.hunyuan.tencent.com/app/icon/search_guide/icon_link_dark260324.png",
+      "webSiteSource": "证券时报网",
+      "invisibleExt": {},
+      "resource_type": "",
+      "sub_resource_type": ""
+    }
+  ],
+  "citations": null,
+  "hitDeepMode": false,
+  "hitHelpDraw": false,
+  "hitDrawMore": false,
+  "hitSearchAIImg": false,
+  "topic": "",
+  "count": 0,
+  "deepModeCid": "",
+  "aiImageTotal": 0,
+  "realImageTotal": 0,
+  "enableFeatures": [
+    "loadingV2"
+  ]
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "根据"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "申"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "万一级"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "行业分"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "类"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "，20"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "2"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "6年"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "4月"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "A股"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "市场整"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "体"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "呈现“"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "成长"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "领"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "涨、"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "消费"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "防御"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "回调"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "”的特"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "征"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "。在"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "31"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "个行业"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "中"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "，仅有"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "**"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "3个"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "行业*"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "*"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "录得"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "负"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "收益，"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "其余均"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "上涨"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "。\n\n"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "[](@mark_underline=1)"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "###"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": " 4"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "月跌幅"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "居"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "前行业"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "榜单"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "\n\n"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "| "
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "排名 "
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "|"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": " 行业"
+}
+
+-----------------------------------------------------------------
+
+消息类型: mark
+完整 JSON 对象: {
+  "type": "mark",
+  "mark": {
+    "mark_id": 1,
+    "content": "根据申万一级行业分类，2026年4月A股市场整体呈现“成长领涨、消费防御回调”的特征。在31个行业中，仅有**3个行业**录得负收益，其余均上涨。\n\
+n[](@mark_underline=1)",
+    "mark_start": "mark_begin",
+    "mark_end": "[](@mark_underline=1)"
+  }
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": " |"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": " 月"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "涨"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "跌幅 "
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "|"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": " 特征"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": " |\n"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "[](@mark_underline=2)"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "|"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": " :-"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "--"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": " | "
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": ":"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "---"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": " |"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": " :-"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "--"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": " | "
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": ":"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "---"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": " |\n"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "| "
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "1 |"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": " **"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "食品"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "饮料*"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "*"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": " | "
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "**"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "-1"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": ".12"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "%**"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": " | "
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "白酒等"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "权重"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "拖"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "累，"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "防御属"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "性"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "导致"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "资金流"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "出"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": " |\n"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "|"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": " 2"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": " | "
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "**"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "交通运"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "输**"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": " | "
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "-"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "0."
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "73%"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": " |"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": " 受"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "出行"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "数据及"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "货运"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "需求"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "预期"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "影响 "
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "|\n"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "| "
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "3 |"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": " **"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "银行"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "** "
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "|"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": " -0"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": ".55"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "% |"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": " 低"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "估值但"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "缺乏弹"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "性"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "，资金"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "流向"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "科技"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "成长"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "股"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": " |\n"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "\n>"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": " 数据"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "来源："
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "Win"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "d、"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "申万"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "宏源"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "，"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "统计区"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "间"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "："
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "202"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "6"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "年4"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "月1"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "日—"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "4月"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "30日"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "[ci"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "tat"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "ion"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": ":2"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "][c"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "ita"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "tio"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "n"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": ":3"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "][c"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "ita"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "tio"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "n"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": ":4"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "]\n\n"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "###"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": " "
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "市场逻"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "辑"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "解析"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "\n1"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": ". "
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": " **"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "结构性"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "分化*"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "*"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "：4"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "月市场"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "主线"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "集中在"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "电子（"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "+26"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": ".79"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "%）、"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "通信（"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "+22"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": ".23"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "%）等"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "高"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "景气"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "成长板"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "块"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "，资金"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "大幅"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "流入"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "科技"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "赛道"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "，"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "导致传"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "统的"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "防御型"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "板块（"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "如食品"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "饮料、"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "银行）"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "被抽"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "血"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "。\n"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "2."
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "  *"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "*"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "跌幅有"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "限"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "**："
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "虽然"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "上述"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "三个板"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "块"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "领跌"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "，但"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "跌幅均"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "控制在"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "**"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "-"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "1."
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "2%"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "以内*"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "*"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "，属于"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "温和调"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "整"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "，并未"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "出现恐"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "慌"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "性抛"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "售。"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "这反映"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "出"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "在"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "指数"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "整体上"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "涨"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "（"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "万"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "得全"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "A涨"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "约8"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": ".69"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "%）的"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "背景下"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "，"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "下跌更"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "多"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "是相对"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "收益的"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "落后，"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "而非绝"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "对"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "价值的"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "崩塌["
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "c"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "ita"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "tio"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "n:"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "3]"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "[ci"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "tat"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "ion"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": ":"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "8]。"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "\n\n"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "如果你"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "关注"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "的是更"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "细分的"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "二级行"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "业"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "（如"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "白酒"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "、航空"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "等"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "）或"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "特定概"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "念"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "板块的"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "表现"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "，可以"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "告诉我"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "，"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "我再帮"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "你"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "做"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "详细"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "拆解"
+}
+
+-----------------------------------------------------------------
+
+消息类型: text
+完整 JSON 对象: {
+  "type": "text",
+  "msg": "。"
+}
+
+-----------------------------------------------------------------
+
+消息类型: hint_v2_tip
+完整 JSON 对象: {
+  "type": "hint_v2_tip",
+  "queryStrategy": "",
+  "hintType": "",
+  "speechIndex": 0
+}
+
+-----------------------------------------------------------------
+
+消息类型: meta
+完整 JSON 对象: {
+  "type": "meta",
+  "messageId": "012a5532-996b-4c50-8f8e-e21bdbd5b6c8_2",
+  "index": 2,
+  "replyId": "012a5532-996b-4c50-8f8e-e21bdbd5b6c8_1",
+  "replyIndex": 1,
+  "traceId": "2a053191d7751c9e20edfd9166a54ea1",
+  "guideId": 0,
+  "ic": 0,
+  "unSupportRepeat": false,
+  "pluginID": "AgenticSearch",
+  "stopReason": "stop",
+  "endConv": false,
+  "requireLogin": false,
+  "requireLoginType": 0,
+  "loginTips": "",
+  "tipsType": 0,
+  "modelErrorCode": 0,
+  "modelErrorMsg": "",
+  "speechIndex": 1,
+  "tokenUsageInfo": {
+    "promptTokens": 6776,
+    "completionTokens": 383,
+    "totalTokens": 7159
+  },
+  "userId": "81c4b93315524b4794caeeadcc91c89c",
+  "outputCheck": false,
+  "chainID": "DeepSeekV3Search",
+  "sensitiveType": 0,
+  "aiSearchSource": "agenticsearch",
+  "performance": {
+    "dataIndex": {
+      "SearchStart": 2,
+      "SearchEnd": 5,
+      "ThinkingStart": -1,
+      "ThinkingEnd": -1,
+      "FirstWord": 7
+    },
+    "timePoint": {
+      "TpSearchStart": 2088,
+      "TpSearchEnd": 5929,
+      "TpThinkingStart": 5929,
+      "TpThinkingEnd": 5929,
+      "TpFirstWord": 5951
+    }
+  }
+}
+
+-----------------------------------------------------------------
