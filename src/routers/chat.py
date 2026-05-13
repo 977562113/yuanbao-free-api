@@ -9,7 +9,7 @@ from src.config import settings
 from src.dependencies.auth import get_authorized_headers
 from src.schemas.chat import ChatCompletionRequest, YuanBaoChatCompletionRequest
 from src.services.chat.completion import create_completion_stream
-from src.services.chat.conversation import create_conversation
+from src.services.chat.conversation import clear_all_conversations, create_conversation
 from src.utils.chat import get_model_info, parse_messages
 
 logger = logging.getLogger(__name__)
@@ -54,4 +54,23 @@ async def chat_completions(
         return EventSourceResponse(generator, media_type="text/event-stream")
     except Exception as e:
         logger.error(f"Error in chat_completions: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@router.post("/v1/conversations/clear")
+async def clear_conversations(headers: dict = Depends(get_authorized_headers)):
+    """清理所有会话接口
+
+    Args:
+        headers: 认证请求头
+
+    Returns:
+        dict: 清理结果 {total: 总数, success: 成功数, failed: 失败数, failed_ids: 失败的会话ID列表}
+    """
+    try:
+        result = await clear_all_conversations(settings.agent_id, headers)
+        logger.info(f"Conversations cleared: {result}")
+        return result
+    except Exception as e:
+        logger.error(f"Error in clear_conversations: {e}")
         raise HTTPException(status_code=500, detail=str(e))
