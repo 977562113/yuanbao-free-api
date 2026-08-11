@@ -10,6 +10,7 @@ from src.dependencies.auth import get_authorized_headers
 from src.schemas.chat import ChatCompletionRequest, YuanBaoChatCompletionRequest
 from src.services.chat.completion import create_completion_stream
 from src.services.chat.conversation import clear_all_conversations, create_conversation
+from src.services.chat.role_chat_cache import clear_role_cache, get_chat_id_by_role, set_chat_id_for_role
 from src.utils.chat import get_model_info, parse_messages
 
 logger = logging.getLogger(__name__)
@@ -32,8 +33,19 @@ async def chat_completions(
     """
     try:
         if not request.chat_id:
-            request.chat_id = await create_conversation(settings.agent_id, headers)
-            logger.info(f"Conversation created with chat_id: {request.chat_id}")
+            # 从第一条消息中提取 role 作为缓存 key
+            role = request.messages[0].role if request.messages else None
+            if role:
+                cached_chat_id = get_chat_id_by_role(role)
+                if cached_chat_id:
+                    request.chat_id = cached_chat_id
+                    logger.info(f"Reusing cached chat_id for role '{role}': {request.chat_id}")
+
+            if not request.chat_id:
+                request.chat_id = await create_conversation(settings.agent_id, headers)
+                logger.info(f"Conversation created with chat_id: {request.chat_id}")
+                if role:
+                    set_chat_id_for_role(role, request.chat_id)
 
         prompt = parse_messages(request.messages)
         model_info = get_model_info(request.model)
@@ -69,6 +81,7 @@ async def clear_conversations(headers: dict = Depends(get_authorized_headers)):
     """
     try:
         result = await clear_all_conversations(settings.agent_id, headers)
+        clear_role_cache()  # 同步删除 roleChatIdMappings.json
         logger.info(f"Conversations cleared: {result}")
         return result
     except Exception as e:

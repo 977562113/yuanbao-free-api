@@ -1,8 +1,9 @@
 from openai import OpenAI
 import json
 import re
+import time
 
-# python test-stand-table-output.py
+# python test-stand-json-output-chatid.py
 
 # 配置
 API_URL = "http://localhost:8000/v1"
@@ -15,6 +16,13 @@ client = OpenAI(
 )
 
 print("正在发送请求...\n")
+
+# ========== 耗时统计 ==========
+t_start = time.perf_counter()           # 总体开始时间
+t_first_chunk = None                    # 首个有效 chunk 到达时间
+chunk_count = 0                         # chunk 总数
+chunk_times = []                        # 每个 chunk 的时间戳 (perf_counter)
+# ==============================
 
 # 发送流式请求
 prompt = (
@@ -206,9 +214,13 @@ prompt = (
     "\n"
 )
 
+prompt = (
+    "中国海油"
+)
+
 stream = client.chat.completions.create(
     model="deepseek-v3-search",
-    messages=[{"role": "test", "content": prompt}],
+    messages=[{"role": "股票压力支撑分析专家", "content": prompt}],
     stream=True
 )
 
@@ -220,7 +232,14 @@ for chunk in stream:
     # 检查是否有 choices
     if not chunk.choices:
         continue
-    
+
+    # 记录首个 chunk 到达时间 (TTFB)
+    if t_first_chunk is None:
+        t_first_chunk = time.perf_counter()
+
+    chunk_count += 1
+    chunk_times.append(time.perf_counter())
+
     # 遍历所有 choices，避免数据丢失
     for choice_index, choice in enumerate(chunk.choices):
         delta = choice.delta
@@ -229,11 +248,11 @@ for chunk in stream:
         # print(f"\ndelta: {delta}")
         content = delta.content if delta.content else ""
         finish_reason = choice.finish_reason
-        
+
         # 打印结束原因（如果有）
         if finish_reason:
             print(f"\n流式响应结束，原因: {finish_reason}")
-        
+
         if content:
 
             print(f"\n handling ... ")
@@ -279,7 +298,7 @@ for chunk in stream:
                             full_text += msg
                 else:
 
-                    if msg_type == "meta" or msg_type == "heartbeat":
+                    if msg_type == "meta" or msg_type == "heartbeat" or msg_type == "hint_v2_tip" or msg_type == "searchGuid" or msg_type == "step":
                         continue
 
                     # 其他类型的消息也记录下来，避免遗漏
@@ -302,11 +321,59 @@ print("\n\n" + "="*50)
 print("完整文本内容：")
 print("="*50)
 
+t_post_start = time.perf_counter()
+
 # 将 [](@mark_underline=数字) 转换为普通引用标注 [数字]
 full_text = re.sub(r'\[\]\(@mark_underline=(\d+)\)', r'[\1]', full_text)
 # 清理引用标签
 full_text = re.sub(r'\[citation:\d+\]', '', full_text)
 full_text = re.sub(r'\[(\d+)\]', '', full_text)
+
+t_post_end = time.perf_counter()
+t_total = time.perf_counter()
+
+# ========== 耗时统计报告 ==========
+print("\n" + "=" * 50)
+print("⏱️  耗时统计报告")
+print("=" * 50)
+
+# TTFB (Time To First Byte)
+if t_first_chunk is not None:
+    ttfb = t_first_chunk - t_start
+    print(f"  首字节耗时 (TTFB):      {ttfb*1000:>8.2f} ms")
+
+# 流式接收阶段
+if t_first_chunk is not None:
+    t_stream_end = chunk_times[-1] if chunk_times else t_first_chunk
+    stream_duration = t_stream_end - t_first_chunk
+    print(f"  流式接收耗时:            {stream_duration*1000:>8.2f} ms")
+
+# chunk 间隔统计
+if len(chunk_times) >= 2:
+    intervals = [chunk_times[i] - chunk_times[i-1] for i in range(1, len(chunk_times))]
+    avg_interval = sum(intervals) / len(intervals)
+    max_interval = max(intervals)
+    min_interval = min(intervals)
+    print(f"  Chunk 数量:              {chunk_count:>8}")
+    print(f"  Chunk 平均间隔:          {avg_interval*1000:>8.2f} ms")
+    print(f"  Chunk 最大间隔:          {max_interval*1000:>8.2f} ms")
+    print(f"  Chunk 最小间隔:          {min_interval*1000:>8.2f} ms")
+
+# API 总耗时 (从请求到最后一个 chunk)
+if t_first_chunk is not None:
+    api_total = t_stream_end - t_start
+    print(f"  API 请求总耗时:          {api_total*1000:>8.2f} ms")
+
+# 后处理耗时
+post_duration = t_post_end - t_post_start
+print(f"  后处理耗时:              {post_duration*1000:>8.2f} ms")
+
+# 全程总计
+total_duration = t_total - t_start
+print(f"  ─────────────────────────────────")
+print(f"  全程总计:                {total_duration*1000:>8.2f} ms ({total_duration:.2f} s)")
+
+print("=" * 50)
 
 print(full_text)
 print("="*50)
